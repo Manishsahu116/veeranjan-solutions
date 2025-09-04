@@ -3,35 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Solutions</title>
+    <title>Veeranjan Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2b9q/G+QjFqF2I/H2q+jJ+gD12Xp/pM0I1QoA3tF2E2F+gD8C+q92PqA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: #111827;
-            color: #E5E7EB;
+            font-family: 'Poppins', sans-serif;
+            background-color: #E0E5E9;
+            color: #1E2B4B;
         }
-        .text-gradient-purple {
-            background-image: linear-gradient(to right, #8B5CF6, #EC4899);
+        .text-gradient-orange {
+            background-image: linear-gradient(to right, #F5A500, #F5A500);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .bg-gradient-purple {
-            background-image: linear-gradient(to bottom right, #8B5CF6, #EC4899);
+        .bg-gradient-orange {
+            background-color: #F5A500;
         }
         .smooth-scroll {
             scroll-behavior: smooth;
         }
         /* Custom Keyframes for a subtle glowing effect on the logo */
         @keyframes glowing-logo {
-            0% { filter: drop-shadow(0 0 5px #EC4899); }
-            50% { filter: drop-shadow(0 0 10px #8B5CF6); }
-            100% { filter: drop-shadow(0 0 5px #EC4899); }
+            0% { filter: drop-shadow(0 0 5px #F5A500); }
+            50% { filter: drop-shadow(0 0 10px #1E2B4B); }
+            100% { filter: drop-shadow(0 0 5px #F5A500); }
         }
         .animate-glowing-logo {
             animation: glowing-logo 3s ease-in-out infinite;
@@ -51,26 +51,21 @@
 <body class="smooth-scroll">
 
     <!-- Navigation Bar -->
-    <nav class="bg-gray-800/80 backdrop-blur-sm fixed w-full z-50 shadow-lg rounded-b-xl p-4">
+    <nav class="bg-white/80 backdrop-blur-sm fixed w-full z-50 shadow-lg rounded-b-xl p-2 ">
         <div class="container mx-auto flex justify-between items-center">
-            <a href="#" class="flex items-center space-x-2">
-                <!-- Glowing SVG Logo -->
-                <svg class="h-8 w-8 text-purple-400 animate-glowing-logo" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 2L2 22h20L12 2zM12 6.82L17.72 20H6.28L12 6.82z"/>
-                </svg>
-                <span class="text-2xl font-bold text-gray-200">
-                    Veeranjan Solutions
-                </span>
+            <a href="/" class="flex items-center">
+                <!-- PNG Logo with animation -->
+                <img src="./IMG_6128.PNG" alt="Veeranjan Solutions Logo" class="w-36 mr-2 animate-glowing-logo">
             </a>
             <div class="hidden md:flex space-x-6 items-center">
-                <a href="#services" class="text-gray-400 hover:text-purple-400 transition-colors">Services</a>
-                <a href="#tech" class="text-gray-400 hover:text-purple-400 transition-colors">Technology</a>
-                <a href="#process" class="text-gray-400 hover:text-purple-400 transition-colors">Process</a>
-                <a href="#testimonials" class="text-gray-400 hover:text-purple-400 transition-colors">Testimonials</a>
-                <a href="#contact" class="bg-gradient-purple text-white px-5 py-2 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">Contact Us</a>
+                <a href="#services" class="text-gray-600 hover:text-orange-500 transition-colors">Services</a>
+                <a href="#tech" class="text-gray-600 hover:text-orange-500 transition-colors">Technology</a>
+                <a href="#process" class="text-gray-600 hover:text-orange-500 transition-colors">Process</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-orange-500 transition-colors">Testimonials</a>
+                <a href="#contact" class="bg-gradient-orange text-white px-5 py-2 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">Contact Us</a>
             </div>
             <!-- Mobile Menu Button -->
-            <button id="mobile-menu-button" class="md:hidden text-gray-400 focus:outline-none">
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                 </svg>
@@ -79,30 +74,30 @@
     </nav>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden fixed top-16 right-0 w-1/2 h-full bg-gray-900 z-40 p-6 shadow-xl rounded-l-xl">
+    <div id="mobile-menu" class="hidden md:hidden fixed top-14 right-0 w-1/2 h-full bg-white z-40 p-6 shadow-xl rounded-l-xl">
         <div class="flex flex-col space-y-4">
-            <a href="#services" class="text-gray-400 hover:text-purple-400 transition-colors">Services</a>
-            <a href="#tech" class="text-gray-400 hover:text-purple-400 transition-colors">Technology</a>
-            <a href="#process" class="text-gray-400 hover:text-purple-400 transition-colors">Process</a>
-            <a href="#testimonials" class="text-gray-400 hover:text-purple-400 transition-colors">Testimonials</a>
-            <a href="#contact" class="bg-gradient-purple text-white px-4 py-2 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 text-center">Contact Us</a>
+            <a href="#services" class="text-gray-600 hover:text-orange-500 transition-colors">Services</a>
+            <a href="#tech" class="text-gray-600 hover:text-orange-500 transition-colors">Technology</a>
+            <a href="#process" class="text-gray-600 hover:text-orange-500 transition-colors">Process</a>
+            <a href="#testimonials" class="text-gray-600 hover:text-orange-500 transition-colors">Testimonials</a>
+            <a href="#contact" class="bg-gradient-orange text-white px-4 py-2 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 text-center">Contact Us</a>
         </div>
     </div>
 
     <!-- Hero Section -->
-    <header class="bg-gray-900 pt-24 pb-16 md:pt-32 md:pb-24">
+    <header class="bg-[#CFD4D8] pt-24 pb-16 md:pt-32 md:pb-24">
         <div class="container mx-auto px-6 text-center">
-            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight text-white fade-slide-up">
-                Elevate Your Brand with <br> <span class="text-gradient-purple block mt-2">Cutting-Edge Web Solutions</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight text-[#1E2B4B] fade-slide-up">
+                Elevate Your Brand with <br> <span class="text-gradient-orange block mt-2">Cutting-Edge Web Solutions</span>
             </h1>
-            <p class="mt-4 text-lg md:text-xl text-gray-400 max-w-3xl mx-auto fade-slide-up" style="transition-delay: 0.2s;">
+            <p class="mt-4 text-lg md:text-xl text-[#3F5774] max-w-3xl mx-auto fade-slide-up" style="transition-delay: 0.2s;">
                 We're not just building websites; we're crafting fast, secure, and visually stunning digital experiences that convert visitors into customers.
             </p>
             <div class="mt-10 flex justify-center space-x-6 fade-slide-up" style="transition-delay: 0.4s;">
-                <a href="#services" class="bg-gradient-purple text-white font-semibold py-3 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                <a href="#services" class="bg-gradient-orange text-white font-semibold py-3 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
                     Explore Services
                 </a>
-                <a href="#contact" class="bg-gray-700 text-gray-200 font-semibold py-3 px-8 rounded-xl shadow-lg border border-gray-600 hover:bg-gray-600 transition-all duration-300 transform hover:scale-105">
+                <a href="#contact" class="bg-gray-400 text-[#1E2B4B] font-semibold py-3 px-8 rounded-xl shadow-lg border border-gray-500 hover:bg-gray-500 hover:text-white transition-all duration-300 transform hover:scale-105">
                     Get a Quote
                 </a>
             </div>
@@ -110,65 +105,85 @@
     </header>
 
     <!-- Services Section -->
-    <section id="services" class="py-16 bg-gray-800 rounded-t-3xl md:py-24">
+    <section id="services" class="py-16 bg-white rounded-t-3xl md:py-24">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-200 fade-slide-up">Our Services</h2>
-            <p class="mt-4 mb-12 text-center text-gray-400 max-w-2xl mx-auto fade-slide-up" style="transition-delay: 0.2s;">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-[#1E2B4B] fade-slide-up">Our Services</h2>
+            <p class="mt-4 mb-12 text-center text-[#3F5774] max-w-2xl mx-auto fade-slide-up" style="transition-delay: 0.2s;">
                 A full suite of services to cover your digital journey from start to finish.
             </p>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Service 1: Web Hosting -->
-                <div class="bg-gray-700 p-8 rounded-2xl shadow-lg border border-gray-600 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl fade-slide-up">
-                    <div class="flex items-center justify-center mb-4 p-3 rounded-full bg-purple-500/20 w-16 h-16">
-                        <i class="fas fa-server text-purple-400 text-3xl"></i>
+                <div class="bg-[#E0E5E9] p-8 rounded-2xl shadow-lg border border-gray-300 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl fade-slide-up">
+                    <div class="flex items-center justify-center mb-4 p-3 rounded-full bg-orange-200 w-16 h-16">
+                        <i class="fas fa-server text-orange-600 text-3xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-200">Web Hosting</h3>
-                    <p class="mt-2 text-gray-400">
+                    <h3 class="text-xl font-bold text-[#1E2B4B]">Web Hosting</h3>
+                    <p class="mt-2 text-[#3F5774]">
                         We provide reliable and lightning-fast web hosting solutions through trusted platforms like Vercel and Hostinger. Your website will be secure, scalable, and always online, ensuring a seamless experience for your visitors.
                     </p>
                     <div class="mt-4 flex items-center space-x-2">
-                        <span class="inline-block bg-gray-500 text-gray-200 text-xs font-semibold px-2 py-1 rounded-full">Vercel</span>
-                        <span class="inline-block bg-gray-500 text-gray-200 text-xs font-semibold px-2 py-1 rounded-full">Hostinger</span>
+                        <span class="inline-block bg-gray-400 text-[#1E2B4B] text-xs font-semibold px-2 py-1 rounded-full">Vercel</span>
+                        <span class="inline-block bg-gray-400 text-[#1E2B4B] text-xs font-semibold px-2 py-1 rounded-full">Hostinger</span>
                     </div>
                 </div>
                 <!-- Service 2: Landing Page Creation -->
-                <div class="bg-gray-700 p-8 rounded-2xl shadow-lg border border-gray-600 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl fade-slide-up">
-                    <div class="flex items-center justify-center mb-4 p-3 rounded-full bg-purple-500/20 w-16 h-16">
-                        <i class="fas fa-file-alt text-purple-400 text-3xl"></i>
+                <div class="bg-[#E0E5E9] p-8 rounded-2xl shadow-lg border border-gray-300 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl fade-slide-up">
+                    <div class="flex items-center justify-center mb-4 p-3 rounded-full bg-orange-200 w-16 h-16">
+                        <i class="fas fa-file-alt text-orange-600 text-3xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-200">Landing Pages</h3>
-                    <p class="mt-2 text-gray-400">
+                    <h3 class="text-xl font-bold text-[#1E2B4B]">Landing Pages</h3>
+                    <p class="mt-2 text-[#3F5774]">
                         Our high-converting landing pages are meticulously designed to capture leads and drive your business forward. We blend compelling design with clear calls-to-action to maximize your conversion rates and deliver measurable results.
                     </p>
                 </div>
                 <!-- Service 3: Presentation Making -->
-                <div class="bg-gray-700 p-8 rounded-2xl shadow-lg border border-gray-600 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl fade-slide-up">
-                    <div class="flex items-center justify-center mb-4 p-3 rounded-full bg-purple-500/20 w-16 h-16">
-                        <i class="fas fa-chart-bar text-purple-400 text-3xl"></i>
+                <div class="bg-[#E0E5E9] p-8 rounded-2xl shadow-lg border border-gray-300 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl fade-slide-up">
+                    <div class="flex items-center justify-center mb-4 p-3 rounded-full bg-orange-200 w-16 h-16">
+                        <i class="fas fa-chart-bar text-orange-600 text-3xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-200">Presentations</h3>
-                    <p class="mt-2 text-gray-400">
+                    <h3 class="text-xl font-bold text-[#1E2B4B]">Presentations</h3>
+                    <p class="mt-2 text-[#3F5774]">
                         We create visually compelling presentations for business proposals, pitch decks, and academic needs. Our designs tell your story with impact, helping you secure new clients or convey complex information with clarity.
                     </p>
                 </div>
                 <!-- Service 4: Documentation -->
-                <div class="bg-gray-700 p-8 rounded-2xl shadow-lg border border-gray-600 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl fade-slide-up">
-                    <div class="flex items-center justify-center mb-4 p-3 rounded-full bg-purple-500/20 w-16 h-16">
-                        <i class="fas fa-book text-purple-400 text-3xl"></i>
+                <div class="bg-[#E0E5E9] p-8 rounded-2xl shadow-lg border border-gray-300 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl fade-slide-up">
+                    <div class="flex items-center justify-center mb-4 p-3 rounded-full bg-orange-200 w-16 h-16">
+                        <i class="fas fa-book text-orange-600 text-3xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-200">Documentation</h3>
-                    <p class="mt-2 text-gray-400">
+                    <h3 class="text-xl font-bold text-[#1E2B4B]">Documentation</h3>
+                    <p class="mt-2 text-[#3F5774]">
                         Our team creates clear, concise, and easy-to-follow documentation for your projects. We ensure your users or developers can get started quickly, reducing support costs and improving the overall user experience.
                     </p>
                 </div>
                 <!-- Service 5: Maintenance & Updates -->
-                <div class="bg-gray-700 p-8 rounded-2xl shadow-lg border border-gray-600 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl fade-slide-up">
-                    <div class="flex items-center justify-center mb-4 p-3 rounded-full bg-purple-500/20 w-16 h-16">
-                        <i class="fas fa-wrench text-purple-400 text-3xl"></i>
+                <div class="bg-[#E0E5E9] p-8 rounded-2xl shadow-lg border border-gray-300 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl fade-slide-up">
+                    <div class="flex items-center justify-center mb-4 p-3 rounded-full bg-orange-200 w-16 h-16">
+                        <i class="fas fa-wrench text-orange-600 text-3xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-200">Maintenance & Updates</h3>
-                    <p class="mt-2 text-gray-400">
+                    <h3 class="text-xl font-bold text-[#1E2B4B]">Maintenance & Updates</h3>
+                    <p class="mt-2 text-[#3F5774]">
                         We handle continuous site maintenance and updates to keep your website secure, fast, and compliant with the latest standards. We provide ongoing support so you can focus on your business.
+                    </p>
+                </div>
+                <!-- Service 6: SEO -->
+                <div class="bg-[#E0E5E9] p-8 rounded-2xl shadow-lg border border-gray-300 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl fade-slide-up">
+                    <div class="flex items-center justify-center mb-4 p-3 rounded-full bg-orange-200 w-16 h-16">
+                        <i class="fas fa-chart-line text-orange-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#1E2B4B]">SEO (Search Engine Optimization)</h3>
+                    <p class="mt-2 text-[#3F5774]">
+                        Boost your online visibility and drive organic traffic with our expert SEO services. We help your site rank higher on search engines, connecting you with the customers who are looking for you.
+                    </p>
+                </div>
+                <!-- Service 7: Ads & Social Media -->
+                <div class="bg-[#E0E5E9] p-8 rounded-2xl shadow-lg border border-gray-300 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl fade-slide-up">
+                    <div class="flex items-center justify-center mb-4 p-3 rounded-full bg-orange-200 w-16 h-16">
+                        <i class="fas fa-bullhorn text-orange-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#1E2B4B]">Ads & Social Media</h3>
+                    <p class="mt-2 text-[#3F5774]">
+                        Reach your target audience effectively through strategic paid advertising campaigns and social media marketing. We create and manage campaigns that deliver measurable results and a strong return on investment.
                     </p>
                 </div>
             </div>
@@ -178,61 +193,61 @@
     <!-- Why Choose Us Section -->
     <section id="why-us" class="py-16 md:py-24">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-200 fade-slide-up">Why Choose Us?</h2>
-            <p class="mt-4 mb-12 text-center text-gray-400 max-w-2xl mx-auto fade-slide-up" style="transition-delay: 0.2s;">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-[#1E2B4B] fade-slide-up">Why Choose Us?</h2>
+            <p class="mt-4 mb-12 text-center text-[#3F5774] max-w-2xl mx-auto fade-slide-up" style="transition-delay: 0.2s;">
                 We combine technical expertise with a client-focused approach to deliver exceptional results.
             </p>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                 <div class="fade-slide-up">
-                    <i class="fas fa-rocket text-5xl text-purple-400 mb-4"></i>
-                    <h3 class="text-xl font-bold text-gray-200">Blazing Fast</h3>
-                    <p class="mt-2 text-gray-400">Leverage modern tech to deliver sites that load in milliseconds.</p>
+                    <i class="fas fa-rocket text-5xl text-orange-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-[#1E2B4B]">Blazing Fast</h3>
+                    <p class="mt-2 text-[#3F5774]">Leverage modern tech to deliver sites that load in milliseconds.</p>
                 </div>
                 <div class="fade-slide-up" style="transition-delay: 0.2s;">
-                    <i class="fas fa-shield-alt text-5xl text-purple-400 mb-4"></i>
-                    <h3 class="text-xl font-bold text-gray-200">Secure & Reliable</h3>
-                    <p class="mt-2 text-gray-400">Your site is protected with the latest security measures and hosted on stable platforms.</p>
+                    <i class="fas fa-shield-alt text-5xl text-orange-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-[#1E2B4B]">Secure & Reliable</h3>
+                    <p class="mt-2 text-[#3F5774]">Your site is protected with the latest security measures and hosted on stable platforms.</p>
                 </div>
                 <div class="fade-slide-up" style="transition-delay: 0.4s;">
-                    <i class="fas fa-handshake text-5xl text-purple-400 mb-4"></i>
-                    <h3 class="text-xl font-bold text-gray-200">Collaborative Process</h3>
-                    <p class="mt-2 text-gray-400">We work closely with you from concept to launch to ensure your vision is realized.</p>
+                    <i class="fas fa-handshake text-5xl text-orange-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-[#1E2B4B]">Collaborative Process</h3>
+                    <p class="mt-2 text-[#3F5774]">We work closely with you from concept to launch to ensure your vision is realized.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Our Process Section -->
-    <section id="process" class="py-16 bg-gray-800 rounded-3xl md:py-24">
+    <section id="process" class="py-16 bg-white rounded-3xl md:py-24">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-200 fade-slide-up">Our Simple Process</h2>
-            <p class="mt-4 mb-12 text-center text-gray-400 max-w-2xl mx-auto fade-slide-up" style="transition-delay: 0.2s;">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-[#1E2B4B] fade-slide-up">Our Simple Process</h2>
+            <p class="mt-4 mb-12 text-center text-[#3F5774] max-w-2xl mx-auto fade-slide-up" style="transition-delay: 0.2s;">
                 We have streamlined our workflow to ensure a smooth and efficient journey from idea to launch.
             </p>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Step 1 -->
-                <div class="bg-gray-700 p-8 rounded-2xl shadow-lg border border-gray-600 fade-slide-up">
-                    <span class="text-4xl font-extrabold text-gradient-purple">01</span>
-                    <h3 class="mt-2 text-xl font-bold text-gray-200">Discovery & Planning</h3>
-                    <p class="mt-2 text-gray-400">We start with a detailed consultation to understand your goals, audience, and vision. We then craft a project plan tailored to your needs.</p>
+                <div class="bg-[#E0E5E9] p-8 rounded-2xl shadow-lg border border-gray-300 fade-slide-up">
+                    <span class="text-4xl font-extrabold text-gradient-orange">01</span>
+                    <h3 class="mt-2 text-xl font-bold text-[#1E2B4B]">Discovery & Planning</h3>
+                    <p class="mt-2 text-[#3F5774]">We start with a detailed consultation to understand your goals, audience, and vision. We then craft a project plan tailored to your needs.</p>
                 </div>
                 <!-- Step 2 -->
-                <div class="bg-gray-700 p-8 rounded-2xl shadow-lg border border-gray-600 fade-slide-up" style="transition-delay: 0.2s;">
-                    <span class="text-4xl font-extrabold text-gradient-purple">02</span>
-                    <h3 class="mt-2 text-xl font-bold text-gray-200">Design & Development</h3>
-                    <p class="mt-2 text-gray-400">Our team brings your vision to life with modern design and development practices, ensuring a fast, responsive, and secure site.</p>
+                <div class="bg-[#E0E5E9] p-8 rounded-2xl shadow-lg border border-gray-300 fade-slide-up" style="transition-delay: 0.2s;">
+                    <span class="text-4xl font-extrabold text-gradient-orange">02</span>
+                    <h3 class="mt-2 text-xl font-bold text-[#1E2B4B]">Design & Development</h3>
+                    <p class="mt-2 text-[#3F5774]">Our team brings your vision to life with modern design and development practices, ensuring a fast, responsive, and secure site.</p>
                 </div>
                 <!-- Step 3 -->
-                <div class="bg-gray-700 p-8 rounded-2xl shadow-lg border border-gray-600 fade-slide-up" style="transition-delay: 0.4s;">
-                    <span class="text-4xl font-extrabold text-gradient-purple">03</span>
-                    <h3 class="mt-2 text-xl font-bold text-gray-200">Deployment & Launch</h3>
-                    <p class="mt-2 text-gray-400">We handle the deployment process on platforms like Vercel, ensuring a seamless and fast launch without any hassle for you.</p>
+                <div class="bg-[#E0E5E9] p-8 rounded-2xl shadow-lg border border-gray-300 fade-slide-up" style="transition-delay: 0.4s;">
+                    <span class="text-4xl font-extrabold text-gradient-orange">03</span>
+                    <h3 class="mt-2 text-xl font-bold text-[#1E2B4B]">Deployment & Launch</h3>
+                    <p class="mt-2 text-[#3F5774]">We handle the deployment process on platforms like Vercel, ensuring a seamless and fast launch without any hassle for you.</p>
                 </div>
                 <!-- Step 4 -->
-                <div class="bg-gray-700 p-8 rounded-2xl shadow-lg border border-gray-600 fade-slide-up" style="transition-delay: 0.6s;">
-                    <span class="text-4xl font-extrabold text-gradient-purple">04</span>
-                    <h3 class="mt-2 text-xl font-bold text-gray-200">Support & Maintenance</h3>
-                    <p class="mt-2 text-gray-400">Our work doesn't stop at launch. We provide ongoing support, maintenance, and updates to keep your site performing at its best.</p>
+                <div class="bg-[#E0E5E9] p-8 rounded-2xl shadow-lg border border-gray-300 fade-slide-up" style="transition-delay: 0.6s;">
+                    <span class="text-4xl font-extrabold text-gradient-orange">04</span>
+                    <h3 class="mt-2 text-xl font-bold text-[#1E2B4B]">Support & Maintenance</h3>
+                    <p class="mt-2 text-[#3F5774]">Our work doesn't stop at launch. We provide ongoing support, maintenance, and updates to keep your site performing at its best.</p>
                 </div>
             </div>
         </div>
@@ -241,83 +256,83 @@
     <!-- Technology Section -->
     <section id="tech" class="py-16 md:py-24">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-200 fade-slide-up">Our Flexible Tech Stack</h2>
-            <p class="mt-4 mb-12 text-center text-gray-400 max-w-2xl mx-auto fade-slide-up" style="transition-delay: 0.2s;">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-[#1E2B4B] fade-slide-up">Our Flexible Tech Stack</h2>
+            <p class="mt-4 mb-12 text-center text-[#3F5774] max-w-2xl mx-auto fade-slide-up" style="transition-delay: 0.2s;">
                 We specialize in powerful, modern technologies to build blazing-fast and scalable websites, but we're flexible to meet your project's specific needs.
             </p>
-            <div class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Tech Card 1: Next.js -->
-                <div class="bg-gray-700 p-8 rounded-2xl shadow-lg text-center w-full md:w-64 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl fade-slide-up">
-                    <span class="text-6xl text-gray-200">
-                        <i class="fas fa-bolt text-gray-200 text-6xl"></i>
+                <div class="bg-[#E0E5E9] p-8 rounded-2xl shadow-lg border border-gray-300 flex flex-col items-center justify-center text-center transform transition-all duration-300 hover:scale-105 hover:shadow-2xl fade-slide-up">
+                    <span class="text-6xl text-[#1E2B4B]">
+                        <i class="fas fa-bolt text-[#1E2B4B] text-6xl"></i>
                     </span>
-                    <h3 class="mt-4 text-xl font-bold text-gray-200">Next.js</h3>
-                    <p class="mt-2 text-sm text-gray-400">For high-performance, SEO-friendly applications.</p>
+                    <h3 class="mt-4 text-xl font-bold text-[#1E2B4B]">Next.js</h3>
+                    <p class="mt-2 text-sm text-[#3F5774]">For high-performance, SEO-friendly applications.</p>
                 </div>
                 <!-- Tech Card 2: React.js -->
-                <div class="bg-gray-700 p-8 rounded-2xl shadow-lg text-center w-full md:w-64 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl fade-slide-up">
-                    <span class="text-6xl text-blue-400">
-                        <i class="fab fa-react text-blue-400 text-6xl"></i>
+                <div class="bg-[#E0E5E9] p-8 rounded-2xl shadow-lg border border-gray-300 flex flex-col items-center justify-center text-center transform transition-all duration-300 hover:scale-105 hover:shadow-2xl fade-slide-up">
+                    <span class="text-6xl text-[#1E2B4B]">
+                        <i class="fab fa-react text-[#1E2B4B] text-6xl"></i>
                     </span>
-                    <h3 class="mt-4 text-xl font-bold text-gray-200">React.js</h3>
-                    <p class="mt-2 text-sm text-gray-400">The industry standard for building dynamic user interfaces.</p>
+                    <h3 class="mt-4 text-xl font-bold text-[#1E2B4B]">React.js</h3>
+                    <p class="mt-2 text-sm text-[#3F5774]">The industry standard for building dynamic user interfaces.</p>
                 </div>
                 <!-- Tech Card 3: Traditional -->
-                <div class="bg-gray-700 p-8 rounded-2xl shadow-lg text-center w-full md:w-64 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl fade-slide-up">
-                    <span class="text-6xl text-gray-200">
-                        <i class="fas fa-code text-gray-200 text-6xl"></i>
+                <div class="bg-[#E0E5E9] p-8 rounded-2xl shadow-lg border border-gray-300 flex flex-col items-center justify-center text-center transform transition-all duration-300 hover:scale-105 hover:shadow-2xl fade-slide-up">
+                    <span class="text-6xl text-[#1E2B4B]">
+                        <i class="fas fa-code text-[#1E2B4B] text-6xl"></i>
                     </span>
-                    <h3 class="mt-4 text-xl font-bold text-gray-200">HTML, CSS, JS</h3>
-                    <p class="mt-2 text-sm text-gray-400">Robust and traditional foundations for simpler, lightweight sites.</p>
+                    <h3 class="mt-4 text-xl font-bold text-[#1E2B4B]">HTML, CSS, JS</h3>
+                    <p class="mt-2 text-sm text-[#3F5774]">Robust and traditional foundations for simpler, lightweight sites.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="py-16 bg-gray-800 rounded-3xl md:py-24">
+    <section id="testimonials" class="py-16 bg-white rounded-3xl md:py-24">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-200 fade-slide-up">What Our Clients Say</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-[#1E2B4B] fade-slide-up">What Our Clients Say</h2>
             <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Testimonial 1 -->
-                <div class="bg-gray-700 p-8 rounded-2xl shadow-lg border border-gray-600 fade-slide-up">
-                    <i class="fas fa-quote-left text-3xl text-purple-400"></i>
-                    <p class="mt-4 text-gray-400 italic">"Working with Veeranjan Solutions was a fantastic experience. They delivered our new landing page on time and it looks incredible. The team was responsive and truly understood our vision."</p>
-                    <p class="mt-4 font-bold text-gray-200">- Alex R. <span class="block text-sm font-normal text-gray-400">Founder, Evolve Fitness</span></p>
+                <div class="bg-[#E0E5E9] p-8 rounded-2xl shadow-lg border border-gray-300 fade-slide-up">
+                    <i class="fas fa-quote-left text-3xl text-orange-600"></i>
+                    <p class="mt-4 text-[#3F5774] italic">"Working with Veeranjan Solutions was a fantastic experience. They delivered our new landing page on time and it looks incredible. The team was responsive and truly understood our vision."</p>
+                    <p class="mt-4 font-bold text-[#1E2B4B]">- Alex R. <span class="block text-sm font-normal text-[#3F5774]">Founder, Evolve Fitness</span></p>
                 </div>
                 <!-- Testimonial 2 -->
-                <div class="bg-gray-700 p-8 rounded-2xl shadow-lg border border-gray-600 fade-slide-up" style="transition-delay: 0.2s;">
-                    <i class="fas fa-quote-left text-3xl text-purple-400"></i>
-                    <p class="mt-4 text-gray-400 italic">"The speed and performance of our new Next.js site are a game-changer. Our users love the new design, and the seamless hosting and maintenance make our lives so much easier."</p>
-                    <p class="mt-4 font-bold text-gray-200">- Jane D. <span class="block text-sm font-normal text-gray-400">CEO, Innovate Tech</span></p>
+                <div class="bg-[#E0E5E9] p-8 rounded-2xl shadow-lg border border-gray-300 fade-slide-up" style="transition-delay: 0.2s;">
+                    <i class="fas fa-quote-left text-3xl text-orange-600"></i>
+                    <p class="mt-4 text-[#3F5774] italic">"The speed and performance of our new Next.js site are a game-changer. Our users love the new design, and the seamless hosting and maintenance make our lives so much easier."</p>
+                    <p class="mt-4 font-bold text-[#1E2B4B]">- Jane D. <span class="block text-sm font-normal text-[#3F5774]">CEO, Innovate Tech</span></p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-gradient-purple text-white rounded-t-3xl md:py-24 fade-slide-up">
+    <section id="contact" class="py-16 bg-[#1E2B4B] text-white rounded-t-3xl md:py-24 fade-slide-up">
         <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold">Ready to Start?</h2>
-            <p class="mt-4 text-lg md:text-xl font-light max-w-2xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-white">Ready to Start?</h2>
+            <p class="mt-4 text-lg md:text-xl font-light max-w-2xl mx-auto text-gray-200">
                 Contact us directly through our social channels for a quick response and to discuss your project.
             </p>
             <div class="mt-8 flex justify-center space-x-6">
                 <!-- Telegram -->
-                <a href="https://t.me/your_telegram_handle" target="_blank" rel="noopener noreferrer" class="bg-gray-800 text-blue-400 p-4 rounded-full shadow-lg transform transition-all duration-300 hover:scale-110 hover:shadow-xl">
+                <a href="https://t.me/veeranjan_solutions" target="_blank" rel="noopener noreferrer" class="bg-[#3F5774] text-gray-200 p-4 rounded-full shadow-lg transform transition-all duration-300 hover:scale-110 hover:shadow-xl">
                     <i class="fab fa-telegram-plane w-8 h-8 text-3xl"></i>
                 </a>
                 <!-- Instagram -->
-                <a href="https://www.instagram.com/your_instagram_handle" target="_blank" rel="noopener noreferrer" class="bg-gray-800 text-pink-400 p-4 rounded-full shadow-lg transform transition-all duration-300 hover:scale-110 hover:shadow-xl">
+                <a href="https://www.instagram.com/veeranjan_solutions/" target="_blank" rel="noopener noreferrer" class="bg-[#3F5774] text-gray-200 p-4 rounded-full shadow-lg transform transition-all duration-300 hover:scale-110 hover:shadow-xl">
                     <i class="fab fa-instagram w-8 h-8 text-3xl"></i>
                 </a>
             </div>
-            <p class="mt-8 text-sm font-light text-gray-200">Your Telegram and Instagram handles here.</p>
+            <p class="mt-8 text-sm font-light text-gray-400">Your Telegram and Instagram handles here.</p>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 py-6">
+    <footer class="bg-[#1E2B4B] text-gray-400 py-6">
         <div class="container mx-auto px-6 text-center text-sm font-light">
             <p>&copy; 2024 Veeranjan Solutions. All rights reserved.</p>
         </div>
